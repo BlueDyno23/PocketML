@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ModelViewActivity"
+    android:padding="20sp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/MVName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"/>
+
+    <TableLayout
+        android:id="@+id/MVTable"
+        android:layout_width="match_parent"
+        android:layout_height="400sp"
+        android:layout_marginVertical="20sp"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="50sp">
+        <LinearLayout
+            android:id="@+id/MVInputs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"/>
+    </HorizontalScrollView>
+    <Button
+        android:id="@+id/MVbtnPredict"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Predict"
+        android:layout_marginVertical="10sp"/>
+    <TextView
+        android:id="@+id/MVtextPrediction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_marginVertical="20sp"/>
+</LinearLayout>
